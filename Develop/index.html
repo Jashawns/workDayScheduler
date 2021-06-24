@@ -24,15 +24,34 @@
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Jashawn's 8:00am - 8:00pm Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="col-12">
+        <div id="800AM 8thhour" class="row" >
+          <div id="800am" value="8" class="col-1 border rounded bg-light p-3 time-block">8AM</div>
+          <textarea id="8" class="col-10 rounded bg-light p-3 description textarea storage" placeholder="Scheduled"></textarea>
+          <button data-hour=8 type="button" class="col-1 border saveBtn saveBtn-i">Save</button>
+        </div>
+      </div>
+
+        <div class="col-12">
+          <div id="900AM 9thhour" class="row" >
+            <div id="900am" value="9" class="col-1 border rounded bg-light p-3 time-block">9AM</div>
+            <textarea id="9" class="col-10 rounded bg-light p-3 description textarea storage" placeholder="Scheduled"></textarea>
+            <button data-hour=9 type="button" class="col-1 border saveBtn saveBtn-i">Save</button>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>

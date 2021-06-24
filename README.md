@@ -22,4 +22,4 @@ THEN I can enter an event
 WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
-THEN the saved events persist
+THEN the saved events persist 
