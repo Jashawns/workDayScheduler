@@ -1,29 +1,96 @@
-// current Day 
-// time blocks
-// color coded time blocks
-// addEventListener Save to local Storag 
-// persists when refreshed
-// var currenttimeEl = $('#time-display');
-// var = $('#time-block');
-// timeblockEl var specifichourEl = $('#800am');
 
+// Display today's day and date
+var todayDate = moment().format('dddd, MMM Do, h:mm:ss a');
+$("#currentDay").html(todayDate);
 
-let update = function () {
-    document.getElementById("currentDay").innerHTML = moment().format(
-      "dddd, MMM Do, h:mm:ss a"
-    );
-  };
+  function currentHour() {
+    //get current number of hours.
+    var timeNow = parseInt(moment().format("H"));
+  
+    if (timeNow < 9) {
+      $("#t9").addClass("future");
+    } else if (timeNow > 9) {
+      $("#t9").addClass("past");
+    } else if (timeNow = 9) {
+      $("#t9").addClass("present");
+    }
 
+      if (timeNow < 10) {
+        $("#t10").addClass("future");
+      } else if (timeNow > 10) {
+        $("#t10").addClass("past");
+      } else if (timeNow = 10) {
+        $("#t10").addClass("present");
+      }
+
+    if (timeNow < 11) {
+      $("#t11").addClass("future");
+    } else if (timeNow > 11) {
+      $("#t11").addClass("past");
+    } else if (timeNow = 11) {
+      $("#t11").addClass("present");
+    }
+
+    if (timeNow < 12) {
+      $("#t12").addClass("future");
+    } else if (timeNow > 12) {
+      $("#t12").addClass("past");
+    } else if (timeNow = 12) {
+      $("#t12").addClass("present");
+    }
+
+    if (timeNow < 13) {
+      $("#t13").addClass("future");
+    } else if (timeNow > 13) {
+      $("#t13").addClass("past");
+    } else if (timeNow = 13) {
+      $("#t13").addClass("present");
+    }
+
+    if (timeNow < 14) {
+      $("#t14").addClass("future");
+    } else if (timeNow > 14) {
+      $("#t14").addClass("past");
+    } else if (timeNow = 14) {
+      $("#t14").addClass("present");
+    }
+
+    if (timeNow < 15) {
+      $("#t15").addClass("future");
+    } else if (timeNow > 15) {
+      $("#t15").addClass("past");
+    } else if (timeNow = 15) {
+      $("#t15").addClass("present");
+    }
+
+    if (timeNow < 16) {
+      $("#t16").addClass("future");
+    } else if (timeNow > 16) {
+      $("#t16").addClass("past");
+    } else if (timeNow = 16) {
+      $("#t16").addClass("present");
+    }
+
+    if (timeNow < 17) {
+      $("#t17").addClass("future");
+    } else if (timeNow > 17) {
+      $("#t17").addClass("past");
+    } else if (timeNow = 17) {
+      $("#t17").addClass("present");
+    }
+  }
+
+  currentHour();
 
   var scheduleEntry9 = document.querySelector("#t9");
   var scheduleEntry10 = document.querySelector("#t10");
   var scheduleEntry11 = document.querySelector("#t11");
   var scheduleEntry12 = document.querySelector("#t12");
-  var scheduleEntry13 = document.querySelector("#t13");
-  var scheduleEntry14 = document.querySelector("#t14");
-  var scheduleEntry15 = document.querySelector("#t15");
-  var scheduleEntry16 = document.querySelector("#t16");
-  var scheduleEntry17 = document.querySelector("#t17");
+  var scheduleEntry1 = document.querySelector("#t13");
+  var scheduleEntry2 = document.querySelector("#t14");
+  var scheduleEntry3 = document.querySelector("#t15");
+  var scheduleEntry4 = document.querySelector("#t16");
+  var scheduleEntry5 = document.querySelector("#t17");
   var addButton9 = document.querySelector("#saveBtn9");
   var addButton10 = document.querySelector("#saveBtn10");
   var addButton11 = document.querySelector("#saveBtn11");
@@ -60,12 +127,6 @@ let update = function () {
     saveLastEntry9();
     renderLastEntry9();
     });
-
-  // function init() {
-  //   // When the init function is executed, the code inside renderLastGrade function will also execute
-  //   renderLastEntry();
-  // }
-  // init();
 
   function saveLastEntry10() {
     // Save related form data as an object
@@ -159,7 +220,7 @@ let update = function () {
       var lastEntry13 = JSON.parse(localStorage.getItem("finalEntry1pm"));
       // Check if data is returned, if not exit out of the function
       if (lastEntry13 !== null) {
-      document.getElementById("t13").innerHTML = lastEntry13.scheduleEntry13
+      document.getElementById("t13").innerHTML = lastEntry13.scheduleEntry1
       } else {
         return;
       }
@@ -185,7 +246,7 @@ let update = function () {
       var lastEntry14 = JSON.parse(localStorage.getItem("finalEntry2pm"));
       // Check if data is returned, if not exit out of the function
       if (lastEntry14 !== null) {
-      document.getElementById("t14").innerHTML = lastEntry14.scheduleEntry14
+      document.getElementById("t14").innerHTML = lastEntry14.scheduleEntry2
       } else {
         return;
       }
@@ -211,7 +272,7 @@ let update = function () {
       var lastEntry15 = JSON.parse(localStorage.getItem("finalEntry3pm"));
       // Check if data is returned, if not exit out of the function
       if (lastEntry15 !== null) {
-      document.getElementById("t15").innerHTML = lastEntry15.scheduleEntry15
+      document.getElementById("t15").innerHTML = lastEntry15.scheduleEntry3
       } else {
         return;
       }
@@ -237,7 +298,7 @@ let update = function () {
       var lastEntry16 = JSON.parse(localStorage.getItem("finalEntry4pm"));
       // Check if data is returned, if not exit out of the function
       if (lastEntry16 !== null) {
-      document.getElementById("t16").innerHTML = lastEntry16.scheduleEntry16
+      document.getElementById("t16").innerHTML = lastEntry16.scheduleEntry4
       } else {
         return;
       }
@@ -263,7 +324,7 @@ let update = function () {
       var lastEntry17 = JSON.parse(localStorage.getItem("finalEntry5pm"));
       // Check if data is returned, if not exit out of the function
       if (lastEntry17 !== null) {
-      document.getElementById("t17").innerHTML = lastEntry17.scheduleEntry17
+      document.getElementById("t17").innerHTML = lastEntry17.scheduleEntry5
       } else {
         return;
       }
