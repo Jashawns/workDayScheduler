@@ -1,3 +1,7 @@
+ /* {
+  background-color: rgba(0,0,0,1.00)!important;
+} */
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -42,19 +46,22 @@ body {
     border-top: 1px dashed #000000;
   }
   
-  .past {
-    background-color: #d3d3d3;
-    color: rgb(0, 126, 222);
+   {
+    background: transparent !important;
+  }
+  .past, #t9.past, #t10.past, #t11.past, #t12.past, #t13.past,#t14.past, #t15.past, #t16.past, #t17.past {
+    background-color: #d3d3d3 !important;
+    color: white;
   }
   
-  .present {
-    background-color: #ff6961;
-    color: rgb(240, 252, 10);
+  .present, #t9.present, #t10.present, #t11.present, #t12.present, #t13.present,#t14.present, #t15.present, #t16.present, #t17.present {
+    background-color: #ff6961 !important;
+    color:white;
   }
   
-  .future {
-    background-color: #77dd77;
-    color: rgb(118, 5, 255);
+  .future, #t9.future, #t10.future, #t11.future, #t12.future, #t13.future,#t14.future, #t15.future, #t16.future, #t17.future {
+    background-color: #77dd77 !important;
+    color:white;
   }
   
   .saveBtn {
