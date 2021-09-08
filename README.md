@@ -7,6 +7,7 @@ This is a simple calendar application that allows a user to save events for each
 ## Visuals 
 
 ![demo](./Assets/DEMO.png) 
+![demo](./Assets/scheduler.png) 
 
 ## Installation 
 
