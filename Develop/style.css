@@ -46,9 +46,6 @@ body {
     border-top: 1px dashed #000000;
   }
   
-   {
-    background: transparent !important;
-  }
   .past, #t9.past, #t10.past, #t11.past, #t12.past, #t13.past,#t14.past, #t15.past, #t16.past, #t17.past {
     background-color: #d3d3d3 !important;
     color: white;
